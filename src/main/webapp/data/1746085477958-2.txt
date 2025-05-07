@@ -1,0 +1,35 @@
+
+:: rownum : 내장컬럼 : 행번호를 붙여줌 : 어떠한 데이터 출력에 모두 적용가능 
+
+select b.* from (
+	select rownum rn, a.* from (
+		 select empno  
+			   ,ename  
+			   ,job    
+			   ,deptno 
+			   ,to_char(hiredate,'yyyy-mm-dd') hiredate 
+		 from  emp
+		 order by hiredate desc ) a ) b
+where
+		rn >= 11 and rn <= 20
+		 
+
+
+
+(1) ->     31 - (1-1)*10
+31
+:
+22
+
+(2) :::>>  31 - (2-1)*10
+21
+:
+12
+
+(3) ->     31 - (3-1)*10
+11
+:
+2
+
+(4) ->  31 - 30
+1
