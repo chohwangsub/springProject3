@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>회원목록화면</title>
+	<title>회원목록화면 12121212 121212121212</title>
 	<link rel="stylesheet" href="../css/style.css"></link>
 </head>
  <script>
@@ -30,7 +30,7 @@
 			<col width="25%"/>
 		</colgroup>
 		<tr>
-			<th>번호</th>
+			<th>번호 12121212 121212121212</th>
 			<th>아이디</th>
 			<th>이름</th>
 			<th>성별</th>

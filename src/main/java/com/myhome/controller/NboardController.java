@@ -16,7 +16,7 @@ import com.myhome.service.NboardService;
 
 @Controller
 public class NboardController {
-
+  //ㅇㄹㅇㄹㅇㄹㅇㄹㅇ
 	@Autowired
 	NboardService nboardService;
 
