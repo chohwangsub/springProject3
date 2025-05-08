@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>게시판 상세화면</title>
+	<title>게시판 상세화면77777777888</title>
 	<link rel="stylesheet" href="../css/style.css" />
 	<script src="../js/jquery-3.7.1.js"></script>
 </head>
@@ -68,7 +68,7 @@ $(function(){
 		<col width="*" />
 	</colgroup>
 	<tr>
-		<th><label for="title">제목</label></th>
+		<th><label for="title">제목7777777</label></th>
 		<td>${dto.title }</td>
 	</tr>
 	<tr>
