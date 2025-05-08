@@ -8,7 +8,11 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>업로드 게시판 수정 화면2222222</title>
+=======
+	<title>업로드 게시판 수정 화면</title>
+>>>>>>> 71b72e75371ea8e4615ed7b4a205912696f71ed8
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/jquery-ui.css">
   	<script src="../js/jquery-3.7.1.js"></script>
@@ -98,78 +102,4 @@
 	</script>
 
 <body>
-
- <div class="div_title">
-    업로드 게시판 수정 화면22222222333333
- </div>
- 
-<form id="frm" enctype="multipart/form-data">
-	
-	<input type="hidden" name="seqid" value="${dto.seqid }" >
-	<input type="hidden" name="filename" value="${dto.filename }" >
-	
-<table class="table1">
-	<colgroup>
-		<col width="20%" />
-		<col width="*" />
-	</colgroup>
-	<tr>
-		<th><label for="title">제목</label></th>
-		<td><input type="text" id="title" name="title" class="input1" value="${dto.title }" placeholder="제목입력" autofocus></td>
-	</tr>
-	<tr>
-		<th><label for="pass">암호</label></th>
-		<td><input type="password" id="pass" name="pass" class="input1" placeholder="암호입력"></td>
-	</tr>
-	
-	<tr>
-		<th><label for="writer">글쓴이</label></th>
-		<td><input type="text" id="writer" name="writer" class="input1" value="${dto.writer }"></td>
-	</tr>
-	
-	<tr>
-		<th><label for="content">내용</label></th>
-		<td><textarea id="content" name="content" class="textarea1">${dto.content }</textarea></td>
-	</tr>
-	<tr>
-		<th><label for="file">파일</label></th>
-		<td style="text-align:left;">
-		
-		<!-- 1745978853748.txt／1745978853750.txt／-->  
-	
-		<c:set var="filenames" value="${fn:trim(dto.filename)}" />
-		<c:set var="files" value="${fn:split(filenames,'／')}" />
-		<!-- files[0]="1745978853748.txt"; -->
-		<!-- files[1]="1745978853750.txt"; -->
-		<c:forEach var="cnt" begin="0" end="2">
-			&nbsp;
-			<c:if test="${filenames != ''}">
-				<c:if test="${files[cnt] != null }">
-					<a href="/data/${files[cnt] }">
-						<img src="/images/icon/download.PNG" width="20" height="20">
-					</a>
-					<a href="#" onclick="fn_delete('${dto.seqid}','${files[cnt]}')">삭제</a>
-				</c:if>
-				<c:if test="${files[cnt] == null }">
-					<img src="/images/icon/download.PNG" width="20" height="20">
-					없음
-				</c:if>
-			</c:if>
-			<input type="file" id="myfile${cnt }" name="myfile${cnt }"> <br>
-		
-		</c:forEach>
-
-		</td>
-	</tr>
-</table>
-
- <div class="div_button_area">
-    <button type="submit" id="btn_submit" onClick="return false;">저장</button>
-    <button type="reset">취소</button>
-    <button type="button" id="btn_list">목록</button>
- </div>
- 
-</form>
-
-</body>
 </html>
