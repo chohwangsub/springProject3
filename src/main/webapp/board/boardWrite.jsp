@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>게시판 등록화면</title>
+	<title>게시판 등록화면22222222222</title>
 </head>
 
 <script>
@@ -39,7 +39,7 @@
 		<col width="*" />
 	</colgroup>
 	<tr>
-		<th><label for="title">제목  </label></th>
+		<th><label for="title">제목22222222  </label></th>
 		<td><input type="text" id="title" name="title" class="input1" placeholder="제목입력" autofocus></td>
 	</tr>
 	<tr>
