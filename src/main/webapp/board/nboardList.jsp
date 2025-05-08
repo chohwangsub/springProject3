@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>게시판 등록화면</title>
+	<title>게시판 등록화면777777</title>
 	<link rel="stylesheet" href="../css/style.css" />
 
 	<link rel="stylesheet" href="../css/jquery-ui.css">

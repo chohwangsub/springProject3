@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>게시판 등록화면22222222222</title>
+	<title>게시판 등록화면777777</title>
 </head>
 
 <script>
