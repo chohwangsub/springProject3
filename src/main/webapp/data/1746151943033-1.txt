@@ -1,0 +1,61 @@
+dept - ~~
+
+emp -(목록화면) empList.jsp
+     -> empList2.jsp -> 페이징
+	    (페이지 번호 나열)
+    -(등록화면) empWrite.jsp
+	-(저장처리) empWriteSave.jsp
+	-(상세화면) empDetail.jsp
+	   {목록}{수정}{삭제}
+	-(수정화면) empModify.jsp
+	-(수정처리) empModifySave.jsp
+	-(암호화면) empPassWrite.jsp
+	-(삭제처리) empDelete.jsp
+ 
+====================================
+
+{목록}->(사원이름 클릭:사원번호)->{상세화면}
+
+{상세}->(수정버튼:사원번호)->{수정화면}
+{상세}->(삭제버튼:사원번호)->{암호화면}
+
+{암호화면} -> (사원번호)
+            암호 [ 12121212 ] [삭제] 
+
+empDelete.jsp
+   1.{암호확인} ->
+   2.{삭제처리} -> 
+
+====================================
+1. 사원이름  홍길동(1234)
+2. 업무     개발
+3. 부서     개발부(10)
+4. 메니저   홍길동(7788)
+5. 입사일    2025-01-01
+6. 급여     250      -- null
+7. 수당       0      -- null
+8. 급여레벨  3레벨
+====================================
+
+  select 
+	     e.empno
+        ,e.ename
+		,e.job
+		,e.deptno
+		,d.dname
+		,e.mgr
+		,em.ename mgrname
+		,g.grade grade
+   from
+        emp e, dept d, emp em, salgrade g
+   where
+        e.deptno = d.deptno
+	 and 
+		e.mgr = em.empno
+	 and
+		e.sal between g.losal and g.hisal
+	 and
+	    e.empno = '7788'
+		
+		
+		
