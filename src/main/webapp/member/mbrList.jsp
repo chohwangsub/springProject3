@@ -17,7 +17,10 @@
 <body>
 
 <div>
-
+		
+    <!-- abcdefg 010101 -->
+	 <!-- abcdefg 010101 -->
+	  <!-- abcdefg 010101 -->
 
 	<div> Total : <c:out value="${total }"/> </div>
 	
