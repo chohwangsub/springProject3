@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>회원목록화면 12121212 121212121212</title>
+	<title>회원목록화면 12121212 121212121212 777777777777</title>
 	<link rel="stylesheet" href="../css/style.css"></link>
 </head>
  <script>
